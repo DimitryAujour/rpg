@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         // Redirect after the fade-out animation duration
         setTimeout(function() {
-            window.location.href = 'Introduction.html';
+            window.location.href = 'introduction.html';
         }, 2000); // Assuming the fade-out animation duration is 1s (1000ms)
     });
 });
