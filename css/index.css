@@ -1,0 +1,68 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    background-color: black;
+    /* for animation */
+    animation: fadeIn 1s ease-out;
+
+}
+/* Fade in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Fade out */
+.fade-out {
+    animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+h1{
+    color: #FFFFFF;
+    font-size: 4em;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.button {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+
+    display: inline;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: indianred;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 0 auto 0 auto;
+}
+.logo{
+    width: 400px;
+    margin: 0 auto 0 auto;
+}
+.button:hover {background-color: orange}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
