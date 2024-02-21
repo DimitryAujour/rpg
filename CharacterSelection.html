@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/characterSelect.css">
+    <title>CharacterSelect</title>
+</head>
+<body>
+<audio autoplay loop id="backgroundMusic">
+    <source src="./audio/wakfu.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<div class="container">
+    <div class="grid">
+        <!-- Character squares -->
+        <div class="character" data-character="Tribal Warrior"><img src="./images/characters/tribewarrior.png" alt="Character 1"></div>
+        <div class="character" data-character="Necromancer"><img src="./images/characters/necro.png" alt="Character 2"></div>
+        <div class="character" data-character="Character1"><img src="./images/characters/samurai.png" alt="Character 3"></div>
+        <div class="character" data-character="Character1"><img src="./images/characters/timescolar.png" alt="Character 4"></div>
+        <div class="character" data-character="Character1"><img src="./images/characters/darkKnight.png" alt="Character 5"></div>
+        <div class="character" data-character="Character1"><img src="./images/characters/shayman.png" alt="Character 6"></div>
+        <div class="character" data-character="Character1"><img src="./images/characters/angel.png" alt="Character 7"></div>
+
+    </div>
+    <div class="character-details">
+        <button class="close-details">Close</button>
+
+        <!-- Details will be populated and shown here -->
+    </div>
+</div>
+<script src="./js/CharacterSelection.js"></script>
+</body>
+</html>

@@ -1,22 +1,13 @@
-body{
-    background-image: linear-gradient( 109.1deg,  rgba(181,73,91,1) 7.1%, rgba(225,107,140,1) 86.4% );}
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+body {
+    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    background-attachment: fixed;
 }
-.modal-content {
+    .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 25% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 80%;
 }
 
 /* Style for image and text */
@@ -26,5 +17,108 @@ body{
 }
 
 #modalText {
+    text-align: center;
+    line-height: normal;
     margin-top: 20px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5em;
+    font-style: normal;
 }
+
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 40% auto;
+        padding: 10px;
+        max-width: 40%;
+    }
+    #modalText {
+        font-size: 1.2em;
+    }
+}
+/* Media query for desktops */
+@media (min-width: 1024px) {
+    .modal-content {
+        margin: 2% auto;
+        max-width: 30%;
+    }
+    #modalText {
+        font-size: 1.2em;
+    }
+    .button-85{
+        font-size: 1rem;
+        padding: 0.3em 1em
+    }
+
+}
+/* CSS https://getcssscan.com/css-buttons-examples*/
+.button-85 {
+    display: flex;
+    margin:   auto;
+    font-size: 2.5em;
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-85:before {
+    content: "";
+    background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button-85:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
