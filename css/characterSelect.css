@@ -1,6 +1,14 @@
 body{
+
     background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     background-attachment: fixed;
+    text-align: center;
+    line-height: normal;
+    margin-top: 20px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5em;
+    font-style: normal;
 }
 .container {
     display: flex;
@@ -12,6 +20,24 @@ body{
     grid-template-columns: repeat(2, 1fr); /* 3 columns */
     gap: 10px;
 }
+.header-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Ensure text is centered if it wraps */
+}
+h2 {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+h3{
+    font-size: 4.5rem;
+    margin: 0.5rem auto 0.5rem auto;
+}
+
 @media (min-width: 700px) {
     .grid {
         grid-template-columns: repeat(3, 1fr); /* 2 columns for small screens */
@@ -25,16 +51,17 @@ body{
 
 
 .character img {
-    max-width: 100%;
-    height: auto;
+    max-width: 300px;
+   height: auto;
 }
 .character-details {
+    font-size: 3rem;
     position: fixed; /* Overlay on top of the page */
     bottom: 0; /* Start from the bottom */
     left: 0;
     right: 0;
     background: white;
-    padding: 20px;
+    padding: 4rem;
     transform: translateY(100%); /* Hide off-screen initially */
     transition: transform 0.3s ease-in-out;
 }
@@ -60,4 +87,21 @@ body{
 /* Fade-in animation */
 .fade-in {
     opacity: 1;
+}
+input[type='checkbox'] {
+    transform: scale(6.5);
+    margin: 4rem auto 4rem auto;}
+.start-game-button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/characterSelect.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kode+Mono:wght@400..700&family=Lexend:wght@100..900&family=Oswald:wght@700&display=swap" rel="stylesheet">
     <title>CharacterSelect</title>
 </head>
 <body>
@@ -11,23 +14,33 @@
     Your browser does not support the audio element.
 </audio>
 
+<div class="header-container">
+    <h2>Choose 3 characters</h2>
+</div>
 <div class="container">
+
     <div class="grid">
         <!-- Character squares -->
         <div class="character" data-character="Tribal Warrior"><img src="./images/characters/tribewarrior.png" alt="Character 1"></div>
         <div class="character" data-character="Necromancer"><img src="./images/characters/necro.png" alt="Character 2"></div>
-        <div class="character" data-character="Character1"><img src="./images/characters/samurai.png" alt="Character 3"></div>
-        <div class="character" data-character="Character1"><img src="./images/characters/timescolar.png" alt="Character 4"></div>
-        <div class="character" data-character="Character1"><img src="./images/characters/darkKnight.png" alt="Character 5"></div>
-        <div class="character" data-character="Character1"><img src="./images/characters/shayman.png" alt="Character 6"></div>
-        <div class="character" data-character="Character1"><img src="./images/characters/angel.png" alt="Character 7"></div>
+        <div class="character" data-character="Samurai"><img src="./images/characters/samurai.png" alt="Character 3"></div>
+        <div class="character" data-character="Timescolar"><img src="./images/characters/timescolar.png" alt="Character 4"></div>
+        <div class="character" data-character="Dark Knight"><img src="./images/characters/darkKnight.png" alt="Character 5"></div>
+        <div class="character" data-character="Shaman"><img src="images/characters/shaman.png" alt="Character 6"></div>
 
     </div>
+
     <div class="character-details">
         <button class="close-details">Close</button>
-
         <!-- Details will be populated and shown here -->
+        <form>
+            <label for="chosenCharacter">Choose this character</label>
+
+            <input type="checkbox" id="chosenCharacter" name="chosenCharacter">
+        </form>
     </div>
+
+
 </div>
 <script src="./js/CharacterSelection.js"></script>
 </body>
