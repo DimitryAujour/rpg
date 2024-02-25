@@ -67,6 +67,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add event listener to the Start Game button, if needed
             startButton.addEventListener('click', function() {
                 // Code to start the game or navigate to the game page
+                localStorage.setItem('selectedCharacters', JSON.stringify(selectedCharacters));
+                // Redirect to the game page
+                window.location.href = 'Map.html';
                 console.log('Starting game with:', selectedCharacters);
             });
         } else if (selectedCharacters.length !== 3 && startButton) {
